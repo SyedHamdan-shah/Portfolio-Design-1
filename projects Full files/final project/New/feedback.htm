@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+	<title>Feedback Form</title>
+	<link rel="stylesheet" type="text/css" href="feedback.css">
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+    	<form method="post" action="#">
+    		<h1>Feedback Form</h1>
+    		<fieldset>
+    			<legend>Personal Information</legend>
+    			<table>
+    				<tr>
+    					<td>
+    						<label for="name">Name:</label>
+    					</td>
+    					<td>
+    						<input type="text" id="name" name="user_name" placeholder="Enter Your name" 
+    						>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						<label for="name">Address:</label>
+    					</td>
+    					<td>
+    						<input type="text" id="address" name="user_name" placeholder="Enter Your address">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						<label for="name">Email:</label>
+    					</td>
+    					<td>
+    						<input type="email" id="email" name="user_name" placeholder="Enter Your Email">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						<label for="name">Phone:</label>
+    					</td>
+    					<td>
+    						<input type="tel" id="Phone" name="user_name" placeholder="Enter your contact number">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						<label for="gender">Gender</label>
+         					</td>
+                            <td>
+                            	<table>
+                            		<tr>
+                            			<td>
+                            				<input type="radio" value="male" name="gender
+                            				">
+                            			</td>
+                            			<td>
+                            				Male
+                            			</td>
+                            		</tr>
+                            		<tr>
+                            			<td>
+                            			<input type="radio" value="female" name="gender">
+                            		</td>
+                            		
+                            		
+                            			<td>
+                            				Female
+                            			</td>
+                            		
+                            		<tr>
+                            			<td>
+                            				<input type="radio" value="Other" name="gender">
+                            			</td>
+                            			<td>Other</td>
+                            		</tr>
+                            	</table>
+                            </td>	
+                          	</tr>
+                          	<tr>
+                          		<td>
+                          			<label for="dod">Date of Birth</label>
+                          		</td>
+                          		<td>
+                          			<input type="date" id="dod" name="user_dod">
+                          		</td>
+                          	</tr>
+    			</table>
+    		</fieldset>
+    		<fieldset>
+    			<div>
+    				<label for="dept">Department</label>
+    				<select id="dropdown1">
+    					<option value="dept1">Department #1</option>
+    					<option value="dept2">Department #2</option>
+    					<option value="dept3">Department #3</option>
+    					<option value="dept4">Department #4</option>
+    				</select>
+    				&nbsp; &nbsp; &nbsp; &nbsp;
+    				<label for="status">Online Status</label>
+    				<select id="dropdown2">
+    					<option value="Oline">Oline</option>
+    					<option value="Ofline">Ofline</option>
+    				</select>
+    			</div>
+    		</fieldset>
+    		<fieldset>
+    			<legend>Your Feedback</legend>
+    			<div>
+    				<textarea name="user_msg" id="msg" cols="40" rows="8" placeholder="Enter your message here"></textarea>
+    			</div>
+    		</fieldset>
+    		<div id="submitbutton">
+    			<button type="submit">Submit your Feedback</button>
+    		</div>
+    	</form>
+    </div>
+</body>
+</html>
